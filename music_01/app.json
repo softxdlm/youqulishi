@@ -1,0 +1,28 @@
+{
+  "pages":[
+    "pages/index/index",
+    "pages/logs/logs",
+    "pages/play/index",
+    "pages/play2/index",
+    "pages/classify/classify",
+    "pages/music/music",
+    "pages/music2/music2"
+  ],
+  "window":{
+    "navigationBarTitleText": "每日解读诗词"
+  },
+  "tabBar": {
+    "backgroundColor": "#cccfff",
+    "list": [{
+      "iconPath":"images/icon_component.png",
+      "selectedIconPath":"images/icon_component_HL.png",
+      "pagePath": "pages/index/index",
+      "text": "首页"
+    }, {
+      "iconPath":"images/icon_component.png",
+      "selectedIconPath":"images/icon_component_HL.png",
+      "pagePath": "pages/classify/classify",
+      "text": "分类"
+    }]
+  }
+}
