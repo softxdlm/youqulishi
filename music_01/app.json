@@ -6,7 +6,8 @@
     "pages/play2/index",
     "pages/classify/classify",
     "pages/music/music",
-    "pages/music2/music2"
+    "pages/music2/music2",
+    "pages/me/me"
   ],
   "window":{
     "navigationBarTitleText": "每日解读诗词"
@@ -14,15 +15,20 @@
   "tabBar": {
     "backgroundColor": "#cccfff",
     "list": [{
-      "iconPath":"images/icon_component.png",
-      "selectedIconPath":"images/icon_component_HL.png",
+      "iconPath":"images/file_59197a4cb17c6.png",
+      "selectedIconPath":"images/file_59197a4c7ebed.png",
       "pagePath": "pages/index/index",
       "text": "首页"
     }, {
-      "iconPath":"images/icon_component.png",
-      "selectedIconPath":"images/icon_component_HL.png",
+      "iconPath":"images/file_59197a4c2e877.png",
+      "selectedIconPath":"images/file_59197a4be7320.png",
       "pagePath": "pages/classify/classify",
-      "text": "分类"
+      "text": "诗词"
+    },{
+      "iconPath": "images/file_59197a4c8c3f6.png",
+      "selectedIconPath": "images/file_59197a4c02e0a.png",
+      "pagePath": "pages/me/me",
+      "text": "我的"
     }]
   }
 }

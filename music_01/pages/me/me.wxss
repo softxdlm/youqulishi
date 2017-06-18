@@ -1,6 +1,5 @@
 /**index.wxss**/
 .userinfo {
-  margin-top:10%; 
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -12,19 +11,20 @@
   margin: 20rpx;
   border-radius: 50%;
 }
-.gzh-mrjdsc{
-  text-indent: 2em; 
-  color: #aaa;
+.gzh-mrjdsc{  
+  text-align: center;
+  color: cadetblue;
   margin: 100rpx 0rpx 5rpx 0rpx; 
-  padding: 20px 15px 20px 15px;
-  font-size: 16px;
-  line-height: 24px;
+}
+.gzh-mrjdsc1{  
+  text-align: center;
+  color: orangered;
+  margin: 10rpx 0rpx; 
 }
 .userinfo-nickname {
-  margin-top: 8px;
   color: #aaa;
 }
 
-.user-motto { 
-  margin-top: 100px;
+.usermotto {
+  margin-top: 80px;
 }
