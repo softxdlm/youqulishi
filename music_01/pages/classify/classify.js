@@ -1,6 +1,6 @@
 //index.js
 //获取应用实例
-var app = getApp()
+
 Page({  
   //事件处理函数
   bindViewTap_a: function () {   
