@@ -3,5 +3,5 @@
 <!--<block wx:for="{{songs}}" wx:for-item="songs" wx:key="*this">
   <audio poster="{{songs.pic}}" name="{{songs.name}}" author="{{songs.author}}" src="{{songs.mp3}}" id="myAudio" controls loop bindplay="funplay" bindpause="funpause" bindtap="play" data-src="{{songs.mp3}}"></audio>-->
   <block wx:for="{{songs}}" wx:for-item="songs" wx:key="*this">
-  <audio poster="{{songs.pic}}" src="{{songs.mp3}}" name="{{songs.name}}" author="{{songs.author}}" id="myAudio" controls data-src="{{songs.mp3}}"></audio>
+  <audio poster="{{songs.pic}}" src="" name="{{songs.name}}" author="{{songs.author}}" id="myAudio" controls="true" bindplay="bindplay" bindtap="audioPlay" data-src="{{songs.mp3}}" data-name="{{songs.name}}"></audio>
 </block>
