@@ -1,0 +1,30 @@
+/**index.wxss**/
+.userinfo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.userinfo-avatar {
+  width: 128rpx;
+  height: 128rpx;
+  margin: 20rpx;
+  border-radius: 50%;
+}
+.gzh-mrjdsc{  
+  text-align: center;
+  color: cadetblue;
+  margin: 100rpx 0rpx 5rpx 0rpx; 
+}
+.gzh-mrjdsc1{  
+  text-align: center;
+  color: orangered;
+  margin: 10rpx 0rpx; 
+}
+.userinfo-nickname {
+  color: #aaa;
+}
+
+.usermotto {
+  margin-top: 80px;
+}
