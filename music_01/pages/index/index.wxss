@@ -28,3 +28,9 @@
 .user-motto { 
   margin-top: 100px;
 }
+.aboutme{
+  text-align: center;  
+  color: #aaa;
+  margin: 20rpx 0rpx 5rpx -1rpx;  
+  font-size: 14px;  
+}

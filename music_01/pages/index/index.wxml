@@ -6,5 +6,11 @@
   </view>
   <view class="gzh-mrjdsc">
     <text class="user-motto">   【每日解读诗词】微信公众号成立，旨在弘扬中国文化，仅用于学习交流，文中内容，图片都是来源于网络，也有粉丝的原创诗词，还有我们的主播在解读原创诗词。希望共同创造一个好的学习平台，让大家一起受益，共同成长。</text>
-  </view>  
+  </view> 
+  <view class="aboutme">
+    <text class="aboutme_a">资源提供：彭顺练-wx：v5888168</text>
+  </view> 
+  <view class="aboutme">
+    <text class="aboutme_a">技术支持：黄  渤-wx：996793368</text>
+  </view> 
 </view>

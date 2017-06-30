@@ -1,5 +1,6 @@
 <!--index.wxml-->
 <view class=""> 
-  <button type="primary" size="primary" bindtap="bindViewTap_a"> 诗词解读（一） </button>
-  <button type="default" size="default" bindtap="bindViewTap_b"> 诗词解读（二） </button>
+<block wx:for="{{classify}}" wx:for-item="classify" wx:key="*this">
+  <button type="{{classify.type}}" bindtap="playTap" data-id="{{classify.url}}"> {{classify.name}} </button>
+ </block>
 </view>
