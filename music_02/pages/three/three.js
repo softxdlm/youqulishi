@@ -2,7 +2,33 @@
 Page({
   onReady: function (e) {
     // 使用 wx.createAudioContext 获取 audio 上下文 context
-    this.audioCtx = wx.createAudioContext('myAudio')
+    // this.audioCtx = wx.createAudioContext('myAudio')
+  },
+  audioPlay: function (e) {
+    var tempFilePath = e.target.dataset.src
+    this.setData({
+      src: tempFilePath
+    })
+  },
+  onShareAppMessage: function () {
+    return {
+      title: '三年级诗词合集',
+      path: '/pages/three/three',
+      success: function (res) {
+        wx.showToast({
+          title: '分享成功',
+          icon: 'success',
+          duration: 2000
+        })
+      },
+      fail: function (res) {
+        wx.showToast({
+          title: '分享失败',
+          icon: 'warn',
+          duration: 2000
+        })
+      }
+    }
   },
   data: {
     songs: [

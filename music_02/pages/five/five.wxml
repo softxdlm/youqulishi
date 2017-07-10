@@ -2,6 +2,24 @@
 <!-- audio.wxml -->
 <!--<block wx:for="{{songs}}" wx:for-item="songs" wx:key="*this">
   <audio poster="{{songs.pic}}" name="{{songs.name}}" author="{{songs.author}}" src="{{songs.mp3}}" id="myAudio" controls loop bindplay="funplay" bindpause="funpause" bindtap="play" data-src="{{songs.mp3}}"></audio>-->
-  <block wx:for="{{songs}}" wx:for-item="songs" wx:key="*this">
-  <audio poster="{{songs.pic}}" src="" name="{{songs.name}}" author="{{songs.author}}" id="myAudio" controls="true" bindplay="bindplay" bindtap="audioPlay" data-src="{{songs.mp3}}" data-name="{{songs.name}}"></audio>
+  <block wx:for="{{songs}}" wx:for-item="songs" wx:key="songs">
+    <audio poster="{{songs.pic}}" name="{{songs.name}}" author="{{songs.author}}" src="{{src}}" id="{{id}}" controls bindtap="audioPlay" data-src="{{songs.mp3}}" data-name="{{songs.name}}"></audio>
+  <!--<view class="block" bindtap="audioPlay" id="{{songs.id}}" data-src="{{songs.mp3}}" data-name="{{songs.name}}" data-id="{{songs.id}}" >
+			<view class="left">
+				<image src="{{songs.pic}}" mode="aspectFill"/>
+			</view>
+			<view class="right">
+				<view class="content">
+					<view>
+						<text class="song-name">{{songs.name}}</text>	
+					</view>
+					<view>
+						<text class="song-artists">{{songs.author}}</text>
+					</view>
+				</view>
+				<view class="play" >
+					<image src="{{src}}" mode="scaleToFill"/>
+				</view>
+			</view>
+		</view>	-->
 </block>

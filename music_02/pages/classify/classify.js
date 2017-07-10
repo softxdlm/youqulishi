@@ -38,6 +38,11 @@ Page({
         type: 'primary',
         name: '五年级',
         url: '../five/five'
+      },
+      {
+        type: 'default',
+        name: '六年级',
+        url: '../six/six'
       }
     ]    
   } ,

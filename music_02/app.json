@@ -1,7 +1,7 @@
 {
   "pages": [
-    "pages/classify/classify",
     "pages/index/index",
+    "pages/classify/classify",    
     "pages/me/me",  
     "pages/music/music",
     "pages/music2/music2",
@@ -12,7 +12,8 @@
     "pages/two/two",
     "pages/three/three",
     "pages/four/four",
-    "pages/five/five"
+    "pages/five/five",
+    "pages/six/six"
     
   ],
   "window": {
