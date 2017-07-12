@@ -110,13 +110,10 @@ $item_str
 			$eventType = $postObj->Event;
 			switch($eventType){
 				case "subscribe":
-					$content = "
-关注哥,可以更清楚的了解哥!
+					$content = "关注哥,可以更清楚的了解哥!
 回复“你好”试试看；
-回复“历史上的今天”试试看；
-回复“笑话”试试看；
-回复“梦见XXX”试试看；
-回复语音城市名查看天气！";
+发送  位置  试试看；
+回复“任何文字”进行字典查询；
 					break;
 				case "unsubscribe":
 					$content = "你就这么无情的把我抛弃了...";
@@ -138,22 +135,27 @@ $item_str
 
 			$keyword = $postObj->Content;
 			include "common.inc.php";
-			if(trim($keyword)=="历史上的今天"){
-				include "history.php";
-				$content = getHistoryInfo();
-			}else if(substr(trim($keyword),0,6)=="梦见"){
-				include "dream.php";
-				$content = getDream(substr(trim($keyword),6,strlen($keyword)));
-			}else if(strstr($keyword,"笑话")){
-				include "xiaohua.php";
-				$content = xiaohua();
-			}else if(strstr($keyword,"你好")){
+			// if(trim($keyword)=="历史上的今天"){
+			// 	include "history.php";
+			// 	$content = getHistoryInfo();
+			// }
+			// else if(substr(trim($keyword),0,6)=="梦见"){
+			// 	include "dream.php";
+			// 	$content = getDream(substr(trim($keyword),6,strlen($keyword)));
+			// }
+			// else if(strstr($keyword,"笑话")){
+			// 	include "xiaohua.php";
+			// 	$content = xiaohua();
+			// }
+			// else 
+			if(strstr($keyword,"你好")){
 				$content = "你好，请问有什么可以帮助你吗?";
-			}else{
+			}
+			else{
 				//$content = TranslateInfo($keyword);
 				//$content = "没有查找到你要的内容";
-				include "jiqiren.php";
-				$content = jiqiren($keyword);
+				include "zidian.php";
+				$content = zidian($keyword);
 			}
 			
 			//回复给粉丝的时候,也得回复xml格式的数据
