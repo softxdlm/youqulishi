@@ -110,10 +110,10 @@ $item_str
 			$eventType = $postObj->Event;
 			switch($eventType){
 				case "subscribe":
-					$content = "关注哥,可以更清楚的了解哥!
-回复“你好”试试看；
-发送  位置  试试看；
-回复“任何文字”进行字典查询；
+					$content = "
+关注哥,可以更清楚的了解哥!
+发送位置可以知道你的坐标;
+发送单个文字可以查字典";
 					break;
 				case "unsubscribe":
 					$content = "你就这么无情的把我抛弃了...";
@@ -135,25 +135,9 @@ $item_str
 
 			$keyword = $postObj->Content;
 			include "common.inc.php";
-			// if(trim($keyword)=="历史上的今天"){
-			// 	include "history.php";
-			// 	$content = getHistoryInfo();
-			// }
-			// else if(substr(trim($keyword),0,6)=="梦见"){
-			// 	include "dream.php";
-			// 	$content = getDream(substr(trim($keyword),6,strlen($keyword)));
-			// }
-			// else if(strstr($keyword,"笑话")){
-			// 	include "xiaohua.php";
-			// 	$content = xiaohua();
-			// }
-			// else 
 			if(strstr($keyword,"你好")){
 				$content = "你好，请问有什么可以帮助你吗?";
-			}
-			else{
-				//$content = TranslateInfo($keyword);
-				//$content = "没有查找到你要的内容";
+			}else{				
 				include "zidian.php";
 				$content = zidian($keyword);
 			}
@@ -162,19 +146,7 @@ $item_str
 			//转换成XML格式的数据,封装到一个函数中
 			if(is_array($content)){
 				$result = $this->zhuanhuanTuwen($postObj,$content);
-			}else{
-				include 'conn.inc.php';
-				//将文本消息保存到数据库
-				$openid = $postObj->FromUserName;
-				$sql ="insert into message values(null,'$openid','$keyword',0,".time().",'text')";
-				
-				mysql_query($sql);
-				//修改user表message字段
-				$sql = "update user set message=1 where openid='{$openid}'";
-				file_put_contents("./user.txt",$sql);
-				mysql_query($sql);
-				//$result = $this->zhuanhuanText($postObj,$content);
-			}	
+			}
 			$result = $this->zhuanhuanText($postObj,$content);
 			return $result;
 		}
