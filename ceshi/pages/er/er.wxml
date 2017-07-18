@@ -1,0 +1,6 @@
+
+<scroll-view class="reportTypeScroll" scroll-x="true" scroll-left="{{toLeftNum}}"> 
+ <block wx:for-items="{{reportTypeList}}" wx:key="{{index}}"> 
+  <text type="primary" style="width:{{itemWidth}}rpx;" bindtap="bind{{item.id}}" data-typeid="{{item.id}}" class="{{currentId==item.id?'clickSel':'removeSel'}}">{{item.name}}</text> 
+ </block> 
+</scroll-view> 

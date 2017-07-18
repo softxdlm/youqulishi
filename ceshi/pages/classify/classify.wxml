@@ -1,0 +1,6 @@
+<!--index.wxml-->
+<view class=""> 
+<block wx:for="{{classify}}" wx:for-item="classify" wx:key="*this">
+  <button type="{{classify.type}}" bindtap="playTap" data-id="{{classify.url}}"> {{classify.name}} </button>
+ </block>
+</view>
