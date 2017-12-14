@@ -1,0 +1,64 @@
+/* Write your styles */
+
+.am-header .am-header-title {
+	margin: 0 5%;
+}
+
+.m-widget-list {
+  margin: 0;
+}
+.m-widget-list li {
+  position: relative;
+}
+.m-widget-list .widget-icon {
+  width: 64px;
+  height: 48px;
+  margin-right: 10px;
+}
+.m-widget-list a {
+  -webkit-transition: all 0.15s;
+  transition: all 0.15s;
+}
+.am-list>li>a {
+	margin-bottom: 0;
+	padding-left: 10px;
+}
+.m-widget-list a:hover {
+  background: #F5F5F5;
+}
+.am-list>li>a .widget-name{
+	padding-right:30px;
+	display:block;
+}
+.m-widget-list a::after {
+  display: inline-block;
+  /* 1 */
+  font-family: "FontAwesome";
+  font-weight: normal;
+  /* 2 */
+  font-style: normal;
+  /* 2 */
+  vertical-align: baseline;
+  /* 3 */
+  line-height: 1;
+  /* 4 */
+  -webkit-font-smoothing: antialiased;
+  /* 5 */
+  -moz-osx-font-smoothing: grayscale;
+  content: "\f054";
+  position: absolute;
+  right: 10px;
+  color: #ccc;
+  top: 50%;
+  margin-top: -8px;
+}
+
+.video{text-align:center;padding:0; background-color:#000;}
+.video h1{color:#ccc;font-size:18px;line-height:40px;margin:0;}
+
+.footer  {
+	background-color:#f5f5f5;
+	padding-top:20px; 
+	padding-bottom:20px;
+	text-align:center;
+}
