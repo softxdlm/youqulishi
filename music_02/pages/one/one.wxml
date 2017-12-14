@@ -1,5 +1,0 @@
-<!--one.wxml-->
-<!-- audio.wxml -->
-<block wx:for="{{songs}}" wx:for-item="songs" wx:key="*this">
-  <audio poster="{{songs.pic}}" name="{{songs.name}}" author="{{songs.author}}" src="{{src}}" id="{{id}}" controls bindtap="audioPlay" data-src="{{songs.mp3}}" data-name="{{songs.name}}"></audio>
-</block>
